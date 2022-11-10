@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600;900&family=Sacramento&display=swap');
+
+
+.main {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: url('bg.jpg') no-repeat center;
+}
+
+.cover {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-color: #a3373775;
+}
+
+.card {
+    margin-top: 20px;
+    width: 190px;
+    height: 200px;
+    background: #c3b6af;
+    position: relative;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+    height: 130%;
+    animation: rotBGimg 3s linear infinite;
+    transition: all 0.2s linear;
+}
+
+@keyframes rotBGimg {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+.card::after {
+    content: '';
+    position: absolute;
+    background: #07182E;
+    inset: 5px;
+    border-radius: 15px;
+} 
+
+.main img {
+    border-radius: 15px;
+    z-index: 999;
+    width: 180px;
+    height: 190px;
+}
+
+.main h3 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 24px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 2px 1px 1px #ff0101, -1px -1px 1px #000, -1px 1px 1px #000, 1px -2px 1px #ff0101;
+}
+
+.btn-div {
+    display: flex;
+    justify-content: center;
+    top: 90%;
+    width: 100vw;
+    position: absolute;
+}
+
+#btn {
+    cursor: pointer;
+    text-decoration: none;
+    position: absolute;
+    border: none;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    width: 9em;
+    height: 3em;
+    line-height: 2em;
+    text-align: center;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 300%;
+    border-radius: 30px;
+    z-index: 1;  
+}
+
+#btn:hover {
+    animation: ani 8s linear infinite;
+    border: none;
+}
+
+
+@keyframes ani {
+    0% {
+     background-position: 0%;
+    }
+   
+    100% {
+     background-position: 400%;
+    }
+   }
+
+#btn:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 400%;
+    border-radius: 35px;
+    transition: 1s;
+}
+
+#btn:hover::before {
+    filter: blur(20px);
+}
+
+#btn:active {
+    background: linear-gradient(32deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.pic {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    overflow: hidden;
+}
+
+p {
+    font-family: 'Sacramento', cursive;
+    font-family: 'Great Vibes', cursive;
+    background-image: url("pic.jpg");
+    word-spacing: -5px;
+    line-height: 5px;
+    font-size: 10px;
+    text-align: justify;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    -webkit-background-clip: text;
+    -webkit-background-size: cover;
+}
+
+
+.ty {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#ffac99;
+    background-image:
+    radial-gradient(at 73% 23%, hsla(216,79%,71%,1) 0px, transparent 50%),
+    radial-gradient(at 44% 20%, hsla(93,88%,60%,1) 0px, transparent 50%),
+    radial-gradient(at 70% 64%, hsla(270,95%,77%,1) 0px, transparent 50%),
+    radial-gradient(at 96% 6%, hsla(229,87%,68%,1) 0px, transparent 50%),
+    radial-gradient(at 83% 7%, hsla(144,65%,71%,1) 0px, transparent 50%),
+    radial-gradient(at 43% 32%, hsla(290,99%,76%,1) 0px, transparent 50%),
+    radial-gradient(at 88% 24%, hsla(307,61%,69%,1) 0px, transparent 50%);
+}
+
+h2 {
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+    color: #fff;
+    font-size: 7rem;
+    text-shadow: 2px 1px 1px #ff0101, -1px -1px 1px #000, -1px 1px 1px #000, 1px -2px 1px #ff0101;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
