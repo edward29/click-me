@@ -40,7 +40,7 @@ while (true) {
         alert('Tayo nalang desisyon ako')
         alert('Wala ng what if what if')
         alert('Sakalin kita eh')
-        alert(`I love you {n}`)
+        alert(`I love you ${n}`)
         alert('I Miss You ♥');
         yourname.innerHTML = n;
         main.style.display = "block";
