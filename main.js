@@ -31,6 +31,16 @@ while (true) {
     
     if (n.length > 0) {
         alert(`Hello ${n}`);
+        alert('What if')
+        alert('What if gusto kita')
+        alert('What if akin ka nalang')
+        alert('What if ...')
+        alert('What if tang inang what if yan')
+        alert('Sino ba nagpa uso nan?')
+        alert('Tayo nalang desisyon ako')
+        alert('Wala ng what if what if')
+        alert('Sakalin kita eh')
+        alert(`I love you {n}`)
         alert('I Miss You ♥');
         yourname.innerHTML = n;
         main.style.display = "block";
