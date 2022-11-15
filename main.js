@@ -30,7 +30,7 @@ while (true) {
     }
     
     if (n.length > 0) {
-        alert(`Hello ${n}`);
+
         alert('What if')
         alert('What if gusto kita')
         alert('What if akin ka nalang')
